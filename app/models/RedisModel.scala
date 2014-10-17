@@ -4,7 +4,7 @@ import com.redis._
 
 trait RedisConnection {
 
-  val redis = new RedisClient("localhost", 6379)
+  val redis = new RedisClient("redis", 6379)
 
 }
 
