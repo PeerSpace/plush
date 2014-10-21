@@ -1,4 +1,4 @@
-FROM peerspace/scala-play
+FROM jeaninejohnson/scala-play
 
 MAINTAINER Antoni Batchelli <tbatchelli@acm.org>
 
