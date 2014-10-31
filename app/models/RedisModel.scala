@@ -1,10 +1,16 @@
 package models
 
 import com.redis._
+import play.Logger
+import play.api.Play.current
+import play.api.Play
 
 trait RedisConnection {
 
-  val redis = new RedisClient("redis", 6379)
+  val redisHost = Play.application.configuration.getString("plush.redis.host")
+  val redisPort = Play.application.configuration.getInt("plush.redis.port")
+  Logger.debug(s"Connecting to redis at ${redisHost.get}:${redisPort.get}")
+  val redis = new RedisClient(redisHost.get, redisPort.get)
 
 }
 

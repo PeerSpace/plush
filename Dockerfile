@@ -6,5 +6,9 @@ ADD target/universal/stage /tmp/stage
 
 EXPOSE 9000
 
-ENTRYPOINT "/tmp/stage/bin/plush"
+WORKDIR "/tmp/stage"
+
+#CMD "-Dconfig.file=/tmp/stage/conf/docker.conf"
+
+#ENTRYPOINT "/tmp/stage/bin/plush"
 
