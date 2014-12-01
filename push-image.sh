@@ -1,2 +1,2 @@
 #!/bin/bash
-docker push jeaninejohnson/plush
+docker push peerspace/plush

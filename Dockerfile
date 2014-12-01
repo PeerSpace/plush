@@ -1,6 +1,6 @@
-FROM jeaninejohnson/scala-play
+FROM peerspace/scala-play
 
-MAINTAINER Antoni Batchelli <tbatchelli@acm.org>
+MAINTAINER Antoni Batchelli <toni@peerspace.com>
 
 ADD target/universal/stage /tmp/stage
 ADD entrypoint.sh /entrypoint.sh
